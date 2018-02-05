@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Chart} from 'ng2-chartjs2';
-import { ActivatedRoute } from '@angular/router';
 import { Trick } from '../../model/trick';
 
 @Component({

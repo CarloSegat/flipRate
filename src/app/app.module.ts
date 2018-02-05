@@ -3,21 +3,27 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AppRouterModule} from './router/app-router.module';
-import { TrickInfoComponent } from './shared/trick-info/trick-info.component';
 import { Chart, ChartModule } from 'ng2-chartjs2';
-import { TrickInfoListComponent } from './shared/trick-info-list/trick-info-list.component';
 import { TrickParentComponent } from './home/trick-icon/trick-parent.component';
 import { TrickService } from './trick.service';
 import { SpaceOutPipe } from './space-out.pipe';
+import { BackArrowComponent } from './back-arrow/back-arrow.component';
+import { OverallComponent } from './specificTrick/overall/overall.component';
+import { SpecificTrickComponent } from './specificTrick/specific-trick.component';
+import { TrickInfoListComponent } from './specificTrick/trick-info-list/trick-info-list.component';
+import { TrickInfoComponent } from './specificTrick/trick-info/trick-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     TrickParentComponent,
-    TrickInfoComponent,
+    SpaceOutPipe,
+    BackArrowComponent,
+    OverallComponent,
+    SpecificTrickComponent,
     TrickInfoListComponent,
-    SpaceOutPipe
+    TrickInfoComponent
   ],
   imports: [
     BrowserModule,
