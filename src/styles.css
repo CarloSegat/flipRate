@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.content-background {
+  background-color: #ded5ca;
+  background-clip: content-box;
+}
+
+.outer-container {
+  height: 100%;
+  padding-top: 20px;
+  width: 100%;
+  overflow: auto;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}

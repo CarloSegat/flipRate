@@ -1,0 +1,14 @@
+<div class="container">
+
+  <h1>Flip Rate</h1>
+  <p>Keep track of your progress and organise your training</p>
+
+    <div *ngFor="let trickName of tricks; let idx = index">
+        <ng-container *ngIf="idx % 2 == 0; else noRow">
+          <div class="row">
+            <app-trick-parent [name]="trickName" class="col-xs-6  gutter10"></app-trick-parent>
+            <app-trick-parent [name]="tricks[idx + 1]" class="col-xs-6  gutter10"></app-trick-parent>
+          </div>
+        </ng-container>
+    </div>
+</div>

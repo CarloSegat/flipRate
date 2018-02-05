@@ -1,0 +1,18 @@
+div {
+  background-color: aliceblue;
+  padding: 10px;
+}
+.big-box {
+  width: 95%;
+  padding-top: 100%;
+  position: relative;
+}
+
+/* If you want text inside of the container */
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
