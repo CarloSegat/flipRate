@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TrickParentComponent } from './trick-icon/trick-parent.component';
+import { TrickService } from '../trick.service';
 
 @Component({
   selector: 'app-home',
@@ -8,10 +9,12 @@ import { TrickParentComponent } from './trick-icon/trick-parent.component';
 })
 export class HomeComponent implements OnInit {
 
-  tricks: string[] = ["ollie", 'flip', 'shovit', 'backside shovit', 'frontside', 'backside', 'nollie', 'nollie shovit'];
-  constructor() { }
+  tricks: string[] = [];
+  constructor(private trickService: TrickService) { }
 
   ngOnInit() {
+    this.trickService.getAllTrickName()
+        .subscribe((listOfTricks) => { this.tricks = listOfTricks; });
   }
 
 }

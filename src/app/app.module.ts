@@ -8,10 +8,9 @@ import { TrickParentComponent } from './home/trick-icon/trick-parent.component';
 import { TrickService } from './trick.service';
 import { SpaceOutPipe } from './space-out.pipe';
 import { BackArrowComponent } from './back-arrow/back-arrow.component';
-import { OverallComponent } from './specificTrick/overall/overall.component';
-import { SpecificTrickComponent } from './specificTrick/specific-trick.component';
-import { TrickInfoListComponent } from './specificTrick/trick-info-list/trick-info-list.component';
-import { TrickInfoComponent } from './specificTrick/trick-info/trick-info.component';
+import { TrickPageComponent } from './trick-page/trick-page.component';
+import { ButtonsComponent } from './trick-page/buttons/buttons.component';
+
 
 @NgModule({
   declarations: [
@@ -20,10 +19,8 @@ import { TrickInfoComponent } from './specificTrick/trick-info/trick-info.compon
     TrickParentComponent,
     SpaceOutPipe,
     BackArrowComponent,
-    OverallComponent,
-    SpecificTrickComponent,
-    TrickInfoListComponent,
-    TrickInfoComponent
+    TrickPageComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,

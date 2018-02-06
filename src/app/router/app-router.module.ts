@@ -2,13 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes } from '@angular/router';
 import { RouterModule} from '@angular/router';
-import { TrickInfoComponent } from '../specificTrick/trick-info/trick-info.component';
 import { HomeComponent } from '../home/home.component';
-import { TrickInfoListComponent } from '../specificTrick/trick-info-list/trick-info-list.component';
-import { SpecificTrickComponent } from '../specificTrick/specific-trick.component';
+import { TrickPageComponent } from '../trick-page/trick-page.component';
 
 const routes: Routes = [
-  {path: 'open-trick/:name', component: SpecificTrickComponent },
+  {path: 'open-trick/:name', component: TrickPageComponent},
   {path: 'home', component: HomeComponent}
   ];
 
@@ -22,3 +20,4 @@ const routes: Routes = [
   declarations: []
 })
 export class AppRouterModule { }
+// ,
